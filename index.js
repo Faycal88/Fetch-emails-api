@@ -13,6 +13,8 @@ app.use(
   })
 );
 
+
+
 async function GetEmails() {
   const inboxContent = await gmailApi.readInboxContent("");
   if (inboxContent === "No update") {
